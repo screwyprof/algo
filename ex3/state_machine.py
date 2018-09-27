@@ -4,12 +4,10 @@ if k < 1 or k > 10000:
 
 i = 0
 while i < k:
-    a = input().split()
-    n = int(a[0])
-    m = int(a[1])
-
+    n, m = [int(x) for x in input().split()]
     if n < 0 or n > 1000:
         exit(1)
+
     if m < 0 or m > 26 * n ** 2:
         exit(1)
 
