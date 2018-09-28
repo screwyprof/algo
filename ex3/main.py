@@ -6,6 +6,10 @@ if k < 1 or k > 10000:
 
 for _ in range(k):
     n, m = [int(x) for x in input().split()]
-    if estimate_uniqueness(n, m) < 0:
+    u = estimate_uniqueness(n, m)
+    if u < 0:
         exit(1)
+
+    print(u)
+
 
