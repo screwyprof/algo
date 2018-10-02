@@ -6,7 +6,11 @@ import math
 
 def quadratic_equation(a: float, b: float, c: float) -> [float, float, float]:
     if a == 0:
-        return -1, 0, 0
+        if b == 0 or c == 0:
+            return 0, 0, 0
+        else:
+            x = (-c / b)
+            return 0, x, x
 
     d = b ** 2 - (4 * a * c)
     if d < 0:

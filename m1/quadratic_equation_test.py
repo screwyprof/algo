@@ -7,8 +7,9 @@ from m1.quadratic_equation import quadratic_equation
     (5, 3, 7, -131, 0, 0),  # D < 0
     (1, -8, 12, 16, 6, 2),  # D > 0
     (1, -6, 9, 0, 3, 3),  # D = 0
-    (0, 1, 1, -1, 0, 0),  # a = 0
-
+    (0, 1, -1, 0, 1, 1),  # a = 0
+    (0, 0, 1, 0, 0, 0),  # a = 0 and b = 0
+    (0, 0, 0, 0, 0, 0),  # a = 0 and b = 0 and c = 0
 ])
 def test_quadratic_equation(a: float, b: float, c: float, expected_d: float, expected_x1: float, expected_x2):
     d, x1, x2 = quadratic_equation(a, b, c)
