@@ -41,7 +41,6 @@ def test_calc_beta_via_tangent(a, b, expected_beta):
     assert beta == expected_beta
 
 
-
 def test_valid_angles():
     assert valid_angles(90, 45, 45)
 
@@ -65,6 +64,7 @@ def test_valid_sides(a, b, c):
 
 def test_valid_right_triangle():
     assert valid_right_triangle(3, 4, 5)
+
 
 def test_valid_right_triangle():
     assert not valid_right_triangle(3, 4, 7)

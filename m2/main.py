@@ -31,6 +31,6 @@ gamma = 180 - alpha - beta
 
 assert valid_angles(alpha, beta, gamma)
 
-print("a = " + str(a) + " см, b = " + str(b) + " см, c = "+str(c) + " см.")
+print("a = " + str(a) + " см, b = " + str(b) + " см, c = " + str(c) + " см.")
 print("Угол α = " + str(alpha) + "°, угол β = " + str(beta) + "°, угол γ = " + str(gamma) + "°.")
 print("S = " + str(s) + " см, P = " + str(p) + " см^2.")
