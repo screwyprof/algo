@@ -45,9 +45,20 @@ def test_valid_angles():
     assert valid_angles(90, 45, 45)
 
 
+def test_valid_angles():
+    assert not valid_angles(100, 50, 80)
+
+
 def test_valid_sides():
     assert valid_sides(3, 4, 5)
 
 
+def test_valid_sides():
+    assert not valid_sides(3, 1, 5)
+
+
 def test_valid_right_triangle():
     assert valid_right_triangle(3, 4, 5)
+
+def test_valid_right_triangle():
+    assert not valid_right_triangle(3, 4, 7)
