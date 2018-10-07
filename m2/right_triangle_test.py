@@ -41,6 +41,7 @@ def test_calc_beta_via_tangent(a, b, expected_beta):
     assert beta == expected_beta
 
 
+
 def test_valid_angles():
     assert valid_angles(90, 45, 45)
 
@@ -53,8 +54,13 @@ def test_valid_sides():
     assert valid_sides(3, 4, 5)
 
 
-def test_valid_sides():
-    assert not valid_sides(3, 1, 5)
+@pytest.mark.parametrize("a, b, c", [
+    (2, 1, 4),
+    (1, 5, 3),
+    (5, 1, 3)
+])
+def test_valid_sides(a, b, c):
+    assert not valid_sides(a, b, c)
 
 
 def test_valid_right_triangle():
